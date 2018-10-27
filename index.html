@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+</head>   
+    <body>
+        <div class="top" id="top">
+            <input type="text" class="display" id="display" value="0" readonly>
+            <button class="AC" id="AC" onclick="ac()">AC</button>
+            <button class="clear" id="clear" onclick="cl()">C</button>
+        </div>
+
+        <div class="fon" id="fon">
+            <div class="firstLine" id="firstLine">
+                <button class="num" id="7" onclick="fu(this.id)">7</button>
+                <button class="num" id="8" onclick="fu(this.id)">8</button>
+                <button class="num" id="9" onclick="fu(this.id)">9</button>
+                <button class="num" value="*" onclick="mt(this.value)">*</button>
+            </div>
+
+            <div class="secondLine" id="secondLine">
+                <button class="num" id="4" onclick="fu(this.id)">4</button>
+                <button class="num" id="5" onclick="fu(this.id)">5</button>
+                <button class="num" id="6" onclick="fu(this.id)">6</button>
+                <button class="num" value="/" onclick="dv(this.value)">/</button>
+            </div>
+            
+            <div class="thirdLine" id="thirdLine">
+                <button class="num" id="1" onclick="fu(this.id)">1</button>
+                <button class="num" id="2" onclick="fu(this.id)">2</button>
+                <button class="num" id="3" onclick="fu(this.id)">3</button>
+                <button class="num" value="+" onclick="pl(this.value)">+</button>
+            </div>
+
+            <div class="fourthLine" id="fourthLine">
+                <button class="num" id="dot" value="." onclick="fu(this.value)">.</button>
+                <button class="num" id="0" onclick="fu(this.id)">0</button>
+                <button class="num" id="equal" onclick="fuEqual()">=</button>
+                <button class="num" value="-" onclick="mn(this.value)">-</button>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="./main.js"></script>
+    </body>
+</html> 
